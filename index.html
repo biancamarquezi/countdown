@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <title>Countdown</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./index.js" defer></script>
+    <link rel="icon" href="./assets/rocket-launch.svg">
+
+</head>
+
+<body data-theme="light">
+    <main>
+        <div class="content">
+            <button id="themeSwitcher" class="darkMode">Dark / Light Mode</button>
+            <h1>Ready to launch in...</h1>
+            <div class="container">
+                <p class="c2">Dias</p>
+                <p class="c2">Horas</p>
+                <p class="c2">Minutos</p>
+                <p class="c2">Segundos</p>
+            </div>
+            <p class='countdown' id="countdown"></p>
+            <p>Inscreva-se para saber mais sobre o lançamento</p>
+            <button type="submit" class="signUp" onclick="openForm()">Inscreva-se</button>
+            <div class="formPopup" id="myForm">
+                <form class="formContainer">
+                    <button type="button" class="closeForm" onclick="closeForm()">X</button>
+                    <h1>Inscreva-se</h1>
+
+                    <label for="name">Nome</label>
+                    <input type="text" placeholder="Digite seu nome" name="nome" required>
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="text" placeholder="Digite seu email" name="email" required>
+
+                    <button type="submit" class="signUp" id='successSignUp'>Enviar</button>
+                </form>
+            </div>
+        </div>
+        <img class='rocket' src="./assets/rocket.svg" alt="imagem de um foguete em lançamento">
+    </main>
+
+</body>
+
+</html>

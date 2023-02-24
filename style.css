@@ -1,0 +1,218 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+:root {
+  --black: #4d4c59;
+  --purple: #6c63ff;
+  --light-grey: #c8c8c8;
+  --text-color: #9c9ab6;
+  --bg-color: whitesmoke;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4% 6%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width: 80%;
+  height: 80vh;
+}
+
+#themeSwitcher {
+  background-color: var(--black);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 1% 2%;
+  font-size: 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 80%;
+  gap: 8%;
+}
+
+h1 {
+  color: var(--purple);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.125rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 2vw;
+}
+
+.container {
+  margin-left: 1.1vw;
+}
+
+.c2 {
+  display: inline;
+  padding: 1.1vw;
+}
+
+.countdown {
+  font-size: 3vw;
+  color: var(--black);
+}
+
+p {
+  color: var(--text-color);
+  font-size: 0.9vw;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.rocket {
+  width: 40%;
+}
+
+.signUp {
+  background-color: var(--purple);
+  font-family: "Poppins", sans-serif;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 2% 6%;
+  font-size: 80%;
+}
+
+.formPopup {
+  display: none;
+  position: fixed;
+  left: 33%;
+  z-index: 9;
+  font-family: "Poppins", sans-serif;
+}
+
+.formContainer {
+  width: 35vw;
+  height: 60vh;
+  padding: 4%;
+  background-color: var(--black);
+  color: var(--bg-color);
+  border: 0.3rem solid var(--light-grey);
+}
+
+.formContainer h1 {
+  color: var(--bg-color);
+  text-align: center;
+  margin-top: 0.1vh;
+  margin-bottom: 0.4vh;
+}
+
+.formContainer input {
+  width: 100%;
+  padding: 3%;
+  margin: 0.5% 0.5% 5% 0;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.formContainer input:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.formContainer .closeForm {
+  color: var(--bg-color);
+  background-color: var(--black);
+  padding: 5px;
+  border: 2px solid var(--bg-color);
+  border-radius: 0.2rem;
+}
+
+.formContainer .signUp {
+  margin-top: 5vh;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+@media (max-width: 975px) {
+  h1 {
+    font-size: 2.5vw;
+  }
+  .countdown {
+    font-size: 4vw;
+  }
+  p {
+    font-size: 1.5vw;
+  }
+}
+
+@media (max-width: 875px) {
+  main {
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    gap: 9%;
+  }
+
+  .content {
+    height: 50%;
+    width: 100vw;
+    gap: 7%;
+  }
+
+  h1 {
+    font-size: 6vw;
+  }
+
+  .countdown {
+    font-size: 6vw;
+  }
+
+  p {
+    font-size: 2vw;
+  }
+
+  .rocket {
+    height: 30vh;
+    width: 60vw;
+  }
+
+  .signUp {
+    margin-top: 2%;
+  }
+  .formPopup {
+    top: 20%;
+    left: 20%;
+  }
+
+  .formContainer {
+    width: 60vw;
+    height: 50vh;
+    padding: 5%;
+  }
+
+  .formContainer h1 {
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 775px) {
+  p {
+    font-size: 3vw;
+  }
+}
