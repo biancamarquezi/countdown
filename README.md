@@ -6,11 +6,11 @@ Além disso, inseri um botão para alternar entre os temas claro e escuro, um fo
 
 ## Screenshot
 
-![](screenshot1.JPG)
+![](./screenshots/screenshot1.JPG)
 
-![](screenshot2.JPG)
+![](./screenshots/screenshot2.JPG)
 
-![](screenshot3.JPG)
+![](./screenshots/screenshot3.JPG)
 
 ## Techs
 
